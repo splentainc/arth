@@ -88,6 +88,32 @@ actor Counter {
 }
 ```
 
+### TypeScript as a Frontend
+
+Write TypeScript that compiles through the same pipeline as Arth — same type checking, same IR, same backends:
+
+```typescript
+class Todo {
+    title: string;
+    done: boolean;
+
+    constructor(title: string) {
+        this.title = title;
+        this.done = false;
+    }
+
+    toggle(): void {
+        this.done = !this.done;
+    }
+}
+
+const task = new Todo("Learn Arth");
+task.toggle();
+console.log(task.title + ": " + task.done);
+```
+
+Start with TypeScript, migrate performance-critical paths to Arth. One toolchain, one binary.
+
 ## Backends
 
 | Backend | Description |
