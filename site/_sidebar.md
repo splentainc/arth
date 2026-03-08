@@ -12,6 +12,7 @@
   - [Providers](guide/providers.md)
   - [Concurrency](guide/concurrency.md)
   - [Generics](guide/generics.md)
+  - [TypeScript Frontend](guide/typescript.md)
 - **Reference**
   - [Language Spec](reference/spec.md)
   - [Standard Library](reference/stdlib.md)
